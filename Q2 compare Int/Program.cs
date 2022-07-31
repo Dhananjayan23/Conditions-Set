@@ -10,9 +10,9 @@ namespace Q2_compare_Int
     {
         static void Main(string[] args)
         {
-                int num1 = GetInteger("Enter a Number");
-                int num2 = GetInteger("Enter a Number");
-                bool value = CompareInt(num1, num2);
+            int num1 = GetInteger("Enter a Number");
+            int num2 = GetInteger("Enter a Number");
+            string value = ComInt(num1, num2);
         }
 
 
@@ -28,9 +28,22 @@ namespace Q2_compare_Int
             return number;
 
         }
-        public static bool CompareInt(int a, int b)
+        public static string ComInt(int a, int b)
         {
-            return a == b;
+            int value1 = a;
+            int value2 = b;
+            string Value = " ";
+
+            if (a == b)
+            {
+                Console.WriteLine("Given numbers are same");
+            }
+            else
+            {
+                Console.WriteLine("Given numbers are not equal");
+            }
+            return Value;
+
 
         }
     }
