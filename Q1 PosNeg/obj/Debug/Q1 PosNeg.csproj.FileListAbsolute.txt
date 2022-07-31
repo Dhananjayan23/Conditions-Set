@@ -1,0 +1,6 @@
+c:\users\dell\documents\visual studio 2012\Projects\Conditionals Set\Q1 PosNeg\bin\Debug\Q1 PosNeg.exe.config
+c:\users\dell\documents\visual studio 2012\Projects\Conditionals Set\Q1 PosNeg\obj\Debug\Q1 PosNeg.csprojResolveAssemblyReference.cache
+C:\Users\dell\Documents\Visual Studio 2012\Projects\Conditionals Set\Q1 PosNeg\bin\Debug\Q1 PosNeg.exe
+C:\Users\dell\Documents\Visual Studio 2012\Projects\Conditionals Set\Q1 PosNeg\bin\Debug\Q1 PosNeg.pdb
+C:\Users\dell\Documents\Visual Studio 2012\Projects\Conditionals Set\Q1 PosNeg\obj\Debug\Q1 PosNeg.exe
+C:\Users\dell\Documents\Visual Studio 2012\Projects\Conditionals Set\Q1 PosNeg\obj\Debug\Q1 PosNeg.pdb
