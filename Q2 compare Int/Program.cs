@@ -10,13 +10,42 @@ namespace Q2_compare_Int
     {
         static void Main(string[] args)
         {
-            int num1 = GetInteger("Enter a Number");
-            int num2 = GetInteger("Enter a Number");
-            string value = ComInt(num1, num2);
+            #region 1
+
+
+            ////int num1 = GetInteger("Enter a Number");
+            ////int num2 = GetInteger("Enter a Number");
+            ////Console.WriteLine(ComInt(num1,num2));
+            #endregion
+            #region 2
+            //float number1 = GetFloat("Enter a Number");
+            //float number2 = GetFloat("Enter a Number");
+            //Console.WriteLine(SameOrNotSame(number1,number2));
+
+            #endregion
+            #region 3
+            //int n = GetInteger("Enter the number: ");
+            //Console.WriteLine(IsEven(n));
+
+            #endregion
+            #region 4
+            //int year = GetInteger("Enter the year: ");
+            //Console.WriteLine(IsLeapYear(year));
+
+            #endregion
+            #region 5
+            //float height = GetFloat("Enter the height in cm: ");
+            //Console.WriteLine(IsTallOrMedOrShort(height));
+
+            #endregion
+            #region 6
+            float height = GetFloat("Enter Your height");
+                Console.WriteLine(IsTallOrMedOrShort(height));
+            #endregion
+
         }
-
-
-
+        
+        
         public static void PrintMessage(string message)
         {
             Console.WriteLine(message);
@@ -30,20 +59,44 @@ namespace Q2_compare_Int
         }
         public static string ComInt(int a, int b)
         {
-            int value1 = a;
-            int value2 = b;
-            string Value = " ";
 
-            if (a == b)
-            {
-                Console.WriteLine("Given numbers are same");
-            }
-            else
-            {
-                Console.WriteLine("Given numbers are not equal");
-            }
-            return Value;
+            return a == b ? "same" : "not same";
+            
+        }
+        public static string SameOrNotSame(float A, float B)
+        {
+            return Math.Abs(A - B) <= 0.5 ? "Same" : "Notsame";
+        }
+        public static bool IsEven(int n)
+        {
+            return n % 2 == 0;
+        }
+        public static bool IsTypicalLeapYear(int yr)
+        {
+            return yr % 4 == 0;
+        }
+        public static bool IsATypicalLeapYear(int yr)
+        {
+            return yr % 100 == 0 && yr % 400 !=0;
+        }
+        public static bool IsLeapYear(int yr)
+        {
+            return IsTypicalLeapYear(yr) && !(IsATypicalLeapYear(yr));
+        }
+        public static string IsTallOrMedOrShort(float cm)
+        {
+            return cm >= 170 ? "Tall" : (cm >= 150 ? "medium" : "short");
 
+        }
+        
+
+
+            
+            public static float GetFloat(string message)
+        {
+            PrintMessage(message);
+            float number = float.Parse(Console.ReadLine());
+            return number;
 
         }
     }

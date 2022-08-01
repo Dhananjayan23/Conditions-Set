@@ -11,7 +11,7 @@ namespace Q1_PosNeg
         static void Main(string[] args)
         {
             int number = GetInteger("Enter a Number");
-            int value = PosNeg(number);
+            Console.WriteLine(PosNeg(number));
         }
 
         public static void PrintMessage(string message)
@@ -25,21 +25,10 @@ namespace Q1_PosNeg
             return number;
 
         }
-        public static int PosNeg(int a)
+        public static string PosNeg(int a)
         {
-            int number = a;
-            if ( a > 0)
-            { 
-                Console.WriteLine("Given Number is Positive");
-            }
-            else if ( a<0)
-            {
-            Console.WriteLine("Given Number is Negative");
-            }
-            else
-            {
-                Console.WriteLine("Given Number equals zero");
-            }
-            return number;
+
+            return a > 0 ? "postive" : (a < 0 ? "negative" : "zero");
+
     }
 }}
